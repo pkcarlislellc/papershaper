@@ -1,4 +1,4 @@
-# git-papershaper
+# papershaper
 ﻿Paper Shaper (C)2014, 2020.  Distributed under the GNU General Public License version 3.0 compliments of P. K. Carlisle LLC
 Paper Shaper automatically sets random wallpaper from local or online JPG images.
 
