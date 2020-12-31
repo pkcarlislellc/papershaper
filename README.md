@@ -157,7 +157,7 @@ Added a note for Ubuntu users about lynx versus links.
 Thu Dec 31 2020  
 Many changes to prepare for packaging in Debian:  
 Updated and clarified the documentation.  
-Updated the webcam listing.  
+Updated the webcam listings.  
 Added copyright and contact information compatible with Debian format and requirements.  
 Replaced defualt images with images with a more clear usage license.  
 Put Python 2 code in its own legacy git.  
