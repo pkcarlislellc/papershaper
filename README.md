@@ -34,11 +34,12 @@ Note that at times a webcam image may appear grainy, gray, black or otherwise di
 
 For best results, invoke Paper Shaper from a start up script or as a Startup Application.
 
-To add new local/offline wallpaper(s), just drop a .jpg into the gallery. Papershaper will rescan the gallery folder and incorporate your addition. 
+To add new local/offline wallpaper(s), just drop a .jpg into the gallery. Paper Shaper will rescan the gallery folder and incorporate your addition. 
 
 Operation:
 
-You do not need an external event launcher like cron or evolution calendar to update wallpaper from the local image gallery or random webcam. As a rule you launch with the command /usr/bin/papershaper or similar as a start up script or command when your computer starts.  Adding a startup command varies from one Linux spin to another.  Paper Shaper has been tested in, and runs beautifully in: KDE 4 (Kubuntu 12.04 LTS), Gnome 2 (CentOS 6 / RHEL 6), MATE (Fedora 20, Ubuntu MATE 18.04, Debian Buster). Use your GUI's process to add a startup command.
+You do not need an external event launcher like cron or evolution calendar to update wallpaper from the local image gallery or random webcam. As a rule you launch with the command 
+/usr/bin/papershaper or similar as a start up script or command when your computer starts.  Adding a startup command varies from one Linux spin to another.  Paper Shaper has been tested in, and runs beautifully in: KDE 4 (Kubuntu 12.04 LTS), Gnome 2 (CentOS 6 / RHEL 6), MATE (Fedora 20, Ubuntu MATE 18.04, Debian Buster). Use your GUI's process to add a startup command.
 
 Advanced usage is as follows:
 /usr/bin/papershaper [g | w | m ] [minutes]
@@ -66,7 +67,7 @@ Paper Shaper requires the lynx browser.  Paper Shaper uses lynx because it will 
 
 ** SPECIAL NOTE FOR UBUNTU USERS. In Ububtu 18.04 there is an offering of a command line browser calld links. links IS NOT lynx. Papershaper requires the lynx browser. 'sudo apt install lynx' or similar should get lynx installed for you. lynx is not installed by Ubuntu 18.04 by default, but is readily available for installation.
 
-This program requires Python 3.  It will be available with your Linux distro or at http://www.python.org/. Papershaper was originally written for and tested in Python 2.6.6.  In anticipation of end of life/support by the Python developers for Python 2, in October, 2019, Papershaper was updated to run in Python 3 by default. For the Python 2 version, see the Technical Specifications section for Github.
+This program requires Python 3.  It will be available with your Linux distro or at http://www.python.org/. Papershaper was originally written for and tested in Python 2.6.6.  In anticipation of end of life/support by the Python developers for Python 2, in October, 2019, Paper Shaper was updated to run in Python 3 by default. To get the Python 2 version, see the Technical Specifications section for Github.
 
 The listing of webcams file can contain comments.  Just don't end a comment with .JPG Or .JPG?  Comments in this file are filtered out automatically when Paper Shaper updates the wallpaper.  
 
@@ -93,16 +94,16 @@ Set your papershaper startup command to use only online content with the w optio
 You are essentially fooling papershaper into selecting a 'random' online webcam but limiting the choice to only one webcam. This updates wallpaper from the same webcam
 as often as you wish (the above example updates once per minute).
 
-Q: How do I add new wallpaper to papershaper?  
+Q: How do I add new wallpaper to Paper Shaper?  
 
 A: Drop any wallpaper quality .JPG into the gallery at ~/com.pkcarlisle/papershaper/gallery/  
-There is no need to rescan the folder, papershaper will rescan the folder for all wallpapers the next time it cycles.  
+There is no need to rescan the folder, Paper Shaper will rescan the folder for all wallpapers the next time it cycles.  
 
-Q: What happens if I'm offline and papershaper tries to retrieve an online image??  
+Q: What happens if I'm offline and Paper Shaper tries to retrieve an online image??  
 
-A: The wallpaper for that cycle will be the border color you selected for bordering images. Papershaper does not break, and will retrieve a new wallpaper next cycle.  
+A: The wallpaper for that cycle will be the border color you selected for bordering images. Paper Shaper does not break, and will retrieve a new wallpaper next cycle.  
 
-Q: How many wallpapers can you have in the papershaper queue?  
+Q: How many wallpapers can you have in the Paper Shaper queue?  
 
 A: I have not run into a limit yet and I have around 250 including webcams and offline gallery images.  
 
@@ -114,17 +115,17 @@ This program assumes that you will be using images in .JPG format because there 
 
 Yes, this is for Linux.  No, it's not for Windows or Mac.  Nuff said.
 
-If you found this file elsewhere, links to latest information is here:
+If you found this file elsewhere, links to latest information are here:
 
 Sourceforge:
 https://sourceforge.net/projects/papershaper/
-(The Sourceforge version is not packaged as an installer. It can run entirely from the user(s) home folder and does not meet the stringent formatting requirements for
+The Sourceforge version is not packaged as an installer. It can run entirely from the user(s) home folder(s) and does not meet the stringent formatting requirements for
 auto-installation as part of an official Linux distro. In that sense it is experimental, and should only be used if you really want to play with the code as well
-as run it.)
+as run it.
 
 Github:
-The ready-for-packaging files can be found at https://github.com/pkcarlislellc/papershaper This contains Python 3 only.
-A stable but legacy version is at https://github.com/pkcarlislellc/papershaper-legacy This includes the Python 2 code for those who want it. This git will not be further updated. (For either version, usage is the same, just use the command '/usr/bin/papershaper...' or '/usr/bin/papershaper-python-2...' as desired.)
+The ready-for-packaging files can be found at https://github.com/pkcarlislellc/papershaper This repository contains Python 3 code only.
+A stable but legacy version is at https://github.com/pkcarlislellc/papershaper-legacy This repository includes the Python 2 code for those who want it. This git will not be updated further. (For either version, usage is the same, just use the command 'papershaper...' or 'papershaper-python-2...' as desired.)
 
 Free Software Foundation:
 http://directory.fsf.org/wiki/Paper_Shaper
@@ -132,6 +133,8 @@ http://directory.fsf.org/wiki/Paper_Shaper
 (C)2014,2020.  Distributed under the GNU General Public License version 3.0 compliments of P. K. Carlisle LLC at www.pkcarlisle.com. Notes to devops@pkcarlisle.com. Follow on twitter @pkcarlislellc. 
 
 Feedback is always welcome, although any communication may be used by me without restriction.
+
+If you know of any online webcams which provide interesting and public .JPG images suitable for Paper Shaper, send me the URL and it may show up in a Paper Shaper update.
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the license, or (at your option) any later version.
 
@@ -159,5 +162,5 @@ Many changes to prepare for packaging in Debian:
 Updated and clarified the documentation.  
 Updated the webcam listings.  
 Added copyright and contact information compatible with Debian format and requirements.  
-Replaced defualt images with images with a more clear usage license.  
-Put Python 2 code in its own legacy git.  
+Replaced default images with images with a more clear usage license.  
+Branched Python 2 code into its own legacy git repository.  
