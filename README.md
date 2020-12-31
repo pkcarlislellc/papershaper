@@ -38,12 +38,10 @@ To add new local/offline wallpaper(s), just drop a .jpg into the gallery. Papers
 
 Operation:
 
-You do not need an external event launcher like cron or evolution calendar to update wallpaper from the local image gallery or random webcam. As a rule you launch with the command 
-/usr/bin/papershaper.py or similar as a start up script or command when your computer starts.  Adding a startup command varies from one Linux spin to another.  Paper Shaper has been tested in, and runs beautifully in: KDE 4 (Kubuntu 12.04 LTS), Gnome 2 (CentOS 6 / RHEL 6), MATE (Fedora 20, Ubuntu MATE 18.04, Debian Buster). Use your GUI's
-process to add a startup command.
+You do not need an external event launcher like cron or evolution calendar to update wallpaper from the local image gallery or random webcam. As a rule you launch with the command /usr/bin/papershaper or similar as a start up script or command when your computer starts.  Adding a startup command varies from one Linux spin to another.  Paper Shaper has been tested in, and runs beautifully in: KDE 4 (Kubuntu 12.04 LTS), Gnome 2 (CentOS 6 / RHEL 6), MATE (Fedora 20, Ubuntu MATE 18.04, Debian Buster). Use your GUI's process to add a startup command.
 
 Advanced usage is as follows:
-/usr/bin/papershaper.py [g | w | m ] [minutes]
+/usr/bin/papershaper [g | w | m ] [minutes]
 
 g – select a random wallpaper image from user's local/offline gallery of JPG images stored in ~/com.pkcarlisle/papershaper/gallery/
  (use this option if you are not always online or if you don't want webcam wallpaper)
@@ -141,25 +139,25 @@ This program is distributed in the hope that it will be useful, but without any 
 
 It is purely optional, as just stated...you may use Paper Shaper forever and a day at no cost, but if you would like to contribute something for Paper Shaper, it will certainly encourage me in developing future projects and distributing them through similar channels. To contribute, go to http://www.pkcarlisle.com/blog.html#wsawom1
 
-Changelog:
-
-Thu Dec 31 2020  
-Many changes to prepare for packaging in Debian:
-Updated and clarified the documentation.
-Updated the webcam listing.
-Added copyright and contact information compatible with Debian format and requirements.
-Replaced defualt images with images with a more clear usage license.
-Put Python 2 code in its own legacy git.  
+Changelog:  
 
 Thu Sep 11 2014  
-Now, with more webcams!  Expanded the list of webcams in webcamgrab.txt. 
-Updated and clarified the documentation.
+Now, with more webcams!  Expanded the list of webcams in webcamgrab.txt.  
+Updated and clarified the documentation.  
 
 Mon Oct 7 2019  
-Converted papershaper.py to Python 3 in anticipation of Python 2 reaching end of life/support by the Python developers.
+Converted papershaper.py to Python 3 in anticipation of Python 2 reaching end of life/support by the Python developers.  
 
-Retained Python 2 version for those who want it.
+Retained Python 2 version for those who want it.  
 
-Updated documentation regarding Python 2 versus Python 3.
+Updated documentation regarding Python 2 versus Python 3.  
 
-Added a note for Ubuntu users about lynx versus links.
+Added a note for Ubuntu users about lynx versus links.  
+
+Thu Dec 31 2020  
+Many changes to prepare for packaging in Debian:  
+Updated and clarified the documentation.  
+Updated the webcam listing.  
+Added copyright and contact information compatible with Debian format and requirements.  
+Replaced defualt images with images with a more clear usage license.  
+Put Python 2 code in its own legacy git.  
