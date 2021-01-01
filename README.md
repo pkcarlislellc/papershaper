@@ -1,5 +1,5 @@
 # papershaper
-﻿Paper Shaper (C)2014, 2020.  Distributed under the GNU General Public License version 3.0 compliments of P. K. Carlisle LLC
+﻿﻿Paper Shaper 1.01.  Distributed under the GNU General Public License version 3.0 compliments of P. K. Carlisle LLC
 Paper Shaper automatically sets random wallpaper from local or online JPG images.
 
 Introduction:
@@ -150,17 +150,15 @@ Updated and clarified the documentation.
 
 Mon Oct 7 2019  
 Converted papershaper.py to Python 3 in anticipation of Python 2 reaching end of life/support by the Python developers.  
-
 Retained Python 2 version for those who want it.  
-
 Updated documentation regarding Python 2 versus Python 3.  
-
 Added a note for Ubuntu users about lynx versus links.  
 
 Thu Dec 31 2020  
+Version 1.01  
 Many changes to prepare for packaging in Debian:  
 Updated and clarified the documentation.  
 Updated the webcam listings.  
-Added copyright and contact information compatible with Debian format and requirements.  
+Added copyright, license and contact information compatible with Debian format and requirements.  
 Replaced default images with images with a more clear usage license.  
 Branched Python 2 code into its own legacy git repository.  
